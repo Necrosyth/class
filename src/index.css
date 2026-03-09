@@ -17,7 +17,7 @@ body {
   min-width: 320px;
   min-height: 100vh;
   background-color: var(--bg-color);
-  background-image: 
+  background-image:
     radial-gradient(at 0% 0%, rgba(102, 126, 234, 0.15) 0px, transparent 50%),
     radial-gradient(at 100% 100%, rgba(118, 75, 162, 0.15) 0px, transparent 50%);
   color: var(--text-primary);
@@ -46,8 +46,15 @@ body {
 }
 
 @keyframes fadeIn {
-  from { opacity: 0; transform: translateY(20px); }
-  to { opacity: 1; transform: translateY(0); }
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
 
 h1 {
@@ -55,6 +62,7 @@ h1 {
   margin-bottom: 0.5rem;
   background: var(--primary-gradient);
   -webkit-background-clip: text;
+  background-clip: text;
   -webkit-text-fill-color: transparent;
   font-weight: 800;
 }
